@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5808,        156]
+NotebookOptionsPosition[      5437,        138]
+NotebookOutlinePosition[      5836,        155]
+CellTagsIndexPosition[      5793,        152]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"Cos", "[", "x", "]"}]}], 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"Sin", "[", "x", "]"}], ")"}], "2"], "+", "1"}]], ",", 
+       FractionBox[
+        RowBox[{"2", 
+         RowBox[{"Sin", "[", "x", "]"}], " ", 
+         RowBox[{"Cos", "[", "x", "]"}]}], 
+        RowBox[{" ", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Sin", "[", "x", "]"}], ")"}], "2"], "+", "1"}]}]]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0.000001", ",", "t"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "Pi"}], ",", "Pi"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<X\>\"", ",", "\"\<Y\>\""}], "}"}]}], ",", 
+     RowBox[{"Background", "\[Rule]", "LightYellow"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Framed", "[", "\"\<Bernoullijeva lemniskata\>\"", "]"}], ",",
+         "Black", ",", "Bold", ",", 
+        RowBox[{"Background", "\[Rule]", "White"}]}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "750"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{"Thickness", "[", "0.005", "]"}], "}"}]}], ",", 
+     RowBox[{"ColorFunction", "\[Rule]", 
+      RowBox[{"Function", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"x", ",", "y", ",", "t"}], "}"}], ",", "Green"}], "]"}]}]}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0.0001", ",", 
+     RowBox[{"-", "6.5"}], " ", ",", 
+     RowBox[{"AnimationRate", "\[Rule]", "0.4"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ/aSX0yli5mvHx7IybmB6rnUYmJ56MxpEP+l1yAHz
+XUXzIHRjLVhc92EjmP7aPxssbvpgM0R/4g4wvddmN1j+6pP9EHX7ToBp36fz
+I0E0q8dKMK2quR5EP46V3Qjm/83dDqHl90DolYfA8rzPz4L5b385R4Hoo8Ih
+ENo5Bky/tYwF07qbEsE0q0gOmFYNLAbToVfLo8D+OtgCEb/WBubPFZgF5vt+
+mQ2m19YsBNNb+5ZDzJ26Aawu9slmEA0AKwKvXA==
+  "]],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0.0001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0.0001, -6.5}}, Typeset`size$$ = {
+    675., {128., 132.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$97256$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0.0001}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$97256$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      ParametricPlot[{
+        2 (Cos[$CellContext`x]/(Sin[$CellContext`x]^2 + 1)), (2 
+          Sin[$CellContext`x]) (Cos[$CellContext`x]/(Sin[$CellContext`x]^2 + 
+          1))}, {$CellContext`x, 1.*^-6, $CellContext`t$$}, 
+        PlotRange -> {{-Pi, Pi}, {-1, 1}}, AxesLabel -> {"X", "Y"}, 
+        Background -> LightYellow, PlotLabel -> Style[
+          Framed["Bernoullijeva lemniskata"], Black, Bold, Background -> 
+          White], ImageSize -> 750, PlotStyle -> {
+          Thickness[0.005]}, ColorFunction -> 
+        Function[{$CellContext`x, $CellContext`y, $CellContext`t}, Green]], 
+      "Specifications" :> {{$CellContext`t$$, 0.0001, -6.5, AnimationRate -> 
+         0.4}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{720., {170., 175.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.704278550665758*^9, {3.704278616864977*^9, 3.7042786399929066`*^9}, {
+   3.7042796914909534`*^9, 3.704279708873766*^9}, {3.704279823538805*^9, 
+   3.7042799057780623`*^9}, 3.7042799820231795`*^9, 3.7042801194098983`*^9, 
+   3.704280288516344*^9, 3.7042803339684925`*^9, {3.7042803742165394`*^9, 
+   3.704280381623766*^9}, {3.704280460998766*^9, 3.7042804804528675`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1350, 633},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+Magnification->0.8999999761581421,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2378, 65, 94, "Input"],
+Cell[2960, 89, 2461, 46, 360, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
